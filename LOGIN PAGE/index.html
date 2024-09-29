@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="index.css">
+    <!-- <link rel="stylesheet" href="about.html"> -->
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" /></head>
+</head>
+<body>
+    <header class="registration-header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">Shop Now</a>
+            </div>
+
+            <nav>
+                <ul>
+                    <li class="link">
+                        <a href="#">Home</a>
+                    </li>
+                    <li class="link">
+                        <a href="about.html">About</a>
+                    </li>
+                    <li class="reg">
+                        <a href="#">Registration</a>
+                    </li>
+                  
+                </ul>
+            </nav>
+        </div>
+        
+        <main>
+            <section class="user-container login-section--display">
+                <div class="registration">
+                    <div class="grid-two--column">
+                        <div class="form-text">
+                            <h2>Welcome Back</h2>
+                            <p>To keep connected with us please login with your personal info.</p>
+                            <button class="login-btn">Login Here</button>
+                        </div>
+                      
+                        <div class="registration-form">
+                            <h2>Create Account</h2>
+                            <div class="social-icons">
+                                <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                            
+                            
+                                <a href=""><i class="fa-brands fa-facebook"></i></a>
+                            
+                            
+                                <a href=""><i class="fa-brands fa-discord"></i></a>
+                        
+                            
+                                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                            </div>
+                            <p>Or use your emails for registration</p>
+
+                            <form action="#" method="post" id="form">
+                                <div class="input-field">
+                                    <label for="name">
+                                        <input type="text" id="name" placeholder="Name" name="name" autocomplete="on" required>
+                                    </label>
+                                </div>
+                                <div class="input-field">
+                                    <label for="email">
+                                        <input type="email" id="email" placeholder="Email"  name="email" autocomplete="on"required>
+                                    </label>
+                                </div>
+                                <div class="input-field">
+                                    <label for="password">
+                                        <input type="password" id="password" placeholder="Password"  name="password" autocomplete="on" required  />
+                                    </label>
+                                </div>
+
+                               <div class="input-field">
+                                <input type="submit" value="submit">
+                               </div>
+                            </form>
+                        </div>
+
+
+                    </div>
+                </div>
+
+                <div class="login">
+                    <div class="grid-two--column">
+                        <div class="form-text">
+                            <h2>Hello, Friends!</h2>
+                            <p>Enter your personal details and start journey with us</p>
+                            <button class="registration-btn">Register Here</button>
+                        </div>
+                      
+                        <div class="login-form">
+                            <h2>Sign In</h2>
+                            <div class="social-icons">
+                                <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                            
+                            
+                                <a href=""><i class="fa-brands fa-facebook"></i></a>
+                            
+                            
+                                <a href=""><i class="fa-brands fa-discord"></i></a>
+                        
+                            
+                                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                            </div>
+                            <p>Or use your account</p>
+
+                            <form action="project.html" method="get">
+                              
+                                <div class="input-field">
+                                    <label for="email1">
+                                        <input type="email" id="email1" placeholder="Email" required>
+                                    </label>
+                                </div>
+                                <div class="input-field">
+                                    <label for="Password1">
+                                        <input type="password" id="Password1" placeholder="Password" required>
+                                    </label>
+                                </div>
+
+                               <div class="input-field2">
+                                <input type="submit" value="log in">
+                               </div>
+                            </form>
+                        </div>
+
+
+                    </div>
+                    
+                </div>
+            </section>
+        </main>
+
+
+    </header>
+
+    <script>
+        const user_con = document.querySelector('.user-container');
+        const regis_btn = document.querySelector('.registration-btn');
+        const log_in = document.querySelector('.login-btn');
+        let login = document.querySelector('.input-field2');
+       
+  
+        regis_btn.addEventListener('click', () =>{
+            user_con.classList.add('login-section--display')
+        })
+
+        log_in.addEventListener('click', ()=>{
+            user_con.classList.remove('login-section--display')
+
+        } )
+
+        login.addEventListener('click', function(){
+            alert('IF YOU CAN ACCESS THEN PRESS OK')
+        })
+
+
+    </script>
+     
+   
+    
+</body>
+</html>
